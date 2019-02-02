@@ -1,0 +1,20 @@
+## YAML Templates
+---
+
+default: -p pretty -p chrome -p homolog -p html
+
+pretty: --format pretty
+for_ci: --format progress
+
+cenarioA: -t @EfetivarCompra
+cenarioB: -t @NameScenario
+
+homolog: AMBIENTE=homolog
+producao: AMBIENTE=producao
+
+chrome: BROWSER=chrome
+chrome_headless: BROWSER=chrome_headless
+firefox: BROWSER=firefox
+firefox_headless: BROWSER=firefox_headless
+
+html: --format html --out=results/report.html
