@@ -1,10 +1,10 @@
 ## YAML Templates
 ---
 
-default: -p pretty -p chrome -p homolog -p html
+default: -p progress -p chrome -p homolog -p html
 
 pretty: --format pretty
-for_ci: --format progress
+progress: --format progress
 
 cenarioA: -t @EfetivarCompra
 cenarioB: -t @NameScenario
